@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javaScript">
+        function add(){
+            var a= parseInt(document.getElementById("t1").value);
+            var b= parseInt(document.getElementById("t2").value);
+            var c= a+b;
+            document.getElementById("t3").value=c;
+        }
+        function sub(){
+            var a= parseInt(document.getElementById("t1").value);
+            var b= parseInt(document.getElementById("t2").value);
+            var c= a-b;
+            document.getElementById("t3").value=c;
+        }
+        function mult(){
+            var a= parseInt(document.getElementById("t1").value);
+            var b= parseInt(document.getElementById("t2").value);
+            var c= a*b;
+            document.getElementById("t3").value=c;
+        }
+        function div(){
+            var a= parseInt(document.getElementById("t1").value);
+            var b= parseInt(document.getElementById("t2").value);
+            var c= a/b;
+            document.getElementById("t3").value=c;
+        }
+        function mod(){
+            var a= parseInt(document.getElementById("t1").value);
+            var b= parseInt(document.getElementById("t2").value);
+            var c= a%b;
+            document.getElementById("t3").value=c;
+        }
+
+
+
+
+
+    </script>
+</head>
+<body style="background: pink;">
+    <div style="border: 1px solid 0; width: 500px; height:350px; margin-left: 380px ;margin-top: 200px;background:linear-gradient(to bottom right,red,purple ); ">
+    
+    <center>
+    <h1>Arthematic operation</h1>
+    <Table>
+   <tr> <label>Enter the first Number</label></tr>
+   <tr><input type="text" id="t1"><br> </tr>
+    <tr> <label>Enter the second Number</label></tr>
+    <input type="text" id="t2"><br>
+    <tr><label>Result</label></tr>
+    <input type="text" id="t3"><br>
+</Table>
+    
+    <button onclick="add()">add</button>
+    <button onclick="sub()">sub</button>
+    <button onclick="div()">div</button>
+    <button onclick="mult()">mult</button>
+    <button onclick="mod()">mod</button>
+</center>
+</div>
+    
+</body>
+</html>

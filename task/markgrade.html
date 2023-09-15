@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table{
+            border: 2px solid black;
+            height: 400px;
+            width: 350px;
+            margin-left: 450px;
+            margin-top: 150px;
+            background-color: rgb(150, 174, 114);       
+        }
+        .content{
+            margin-top: 30px;
+            line-height: 2;
+        }
+        th{
+            text-align: center;
+        }
+
+    </style>
+   
+</head> 
+<body>
+    <section class="table">
+        <div  class="content">
+            <table>
+                <th colspan="2">Students Grade</th>
+                <tr>
+                <td><lable>Enter the Rollno:</lable></td>
+                <td> <input type="text" id="t1"></td>
+                </tr>
+                <tr>
+                    <td><label>Enter the Name</label></td>
+                    <td><input type="text" id="t2"></td>
+                </tr>
+                <tr>
+                    <td><label>Enter the Mark 1</label></td>
+                    <td><input type="number" id="t3"></td>
+                </tr>
+                <tr>
+                    <td><label>Enter the Mark 2</label></td>
+                    <td><input type="number" id="t4"></td>
+                </tr>
+                <tr>
+                    <td><label>Enter the Mark 3</label></td>
+                    <td><input type="number" id="t5"></td>
+                </tr>
+                <tr>
+                    <td><label><button onclick="total()">Total:</button></label></td>
+                    <td><input type="text" id="t6"></td>
+                </tr>
+                <tr>
+                    <td><label><button onclick="percentage()">Percentage:</button></label></td>
+                    <td><input type="text" id="t7"></td>
+                </tr>
+                <tr>
+                    <td><label><button onclick="result()">Result:</button></label></td>
+                    <td><input type="text" id="t8"></td>
+                </tr>
+                <tr>
+                    <th colspan="2"><button onclick="getresult()"> Get Result</button></th>
+                    
+                </tr>
+            </table>
+        </div>
+    </section>    
+    <script>
+        function getresult()
+        {
+            var t3=parseInt(document.getElementById('t3').value);
+            var t4=parseInt(document.getElementById('t4').value);
+            var t5=parseInt(document.getElementById('t5').value);
+            var total=t3+t4+t5;
+            var per=total/3;
+                    document.getElementById("t6").value=total;
+                    document.getElementById("t7").value=per;
+            if((t3<40)||(t4<40)||(t5<40))
+            {
+                var status="Fail";
+                document.getElementById("t8").value=status;
+            }
+            else{
+                var status="Pass";
+                document.getElementById("t8").value=status;
+            }
+            
+        }
+
+        
+        </script>
+    
+</body>
+</html>

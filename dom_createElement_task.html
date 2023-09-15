@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="dynamic()">Click</button>
+    <div id="main"></div>
+    <script>
+        function dynamic() 
+        {
+                var newDiv = document.createElement("div");
+            
+
+                var h1tag = document.createElement("h1");
+                var text1 = document.createTextNode("Adarsh");
+                h1tag.appendChild(text1); 
+                newDiv.appendChild(h1tag); 
+
+                var h2tag = document.createElement("h2");
+                var text2 = document.createTextNode("BE ECE");
+                h2tag.appendChild(text2); 
+                newDiv.appendChild(h2tag); 
+
+                var ptag = document.createElement("p");
+                var text3 = document.createTextNode("Aspiring full stack Development");
+                ptag.appendChild(text3); 
+                newDiv.appendChild(ptag); 
+
+
+                document.body.appendChild(newDiv);
+        }
+    </script>
+</body>
+</html>

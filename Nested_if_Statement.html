@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function validate(){
+            var un= document.getElementById("t1").value;
+            var pw= document.getElementById("t2").value;
+
+            if(un=="kgm")
+            {
+                if(pw=="kgm@123")
+                {
+                    alert("valid User");
+                }
+                else
+                {
+                    alert("Please enter valid password")
+                }
+            }
+            else
+            {
+                alert("Please enter valid username")
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+    <section>
+        <div>
+            <h1>Login Form</h1>
+            <lale>Username</lable>
+            <input type="text" id="t1"><br>
+            <label>Password</label>
+            <input type="password" id="t2"><br>
+            <button onclick="validate()">Submit</button>
+            <button>Cancel</button>
+
+        </div>
+    </section>
+    
+
+    
+</body>
+</html>

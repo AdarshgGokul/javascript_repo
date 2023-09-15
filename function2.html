@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Interest Calculator</h2>
+    <script>
+        function disp(){
+            var p = parseInt(document.getElementById("t1").value);
+            var r = parseInt(document.getElementById("t2").value);
+            var n = parseInt(document.getElementById("t3").value);
+            var res = calc(p,n,r);
+            alert("simple Interest: "+res);
+        }
+        function calc(p,n,r)
+            { 
+                var si = (p*n*r)/100;
+                return si;
+            }
+    </script>
+    <lable>Enter the principle Amount</lable>
+    <input type="number" id="t1"><br> 
+    <label>Enter the Rate of Interest</label>
+    <input type="number" id="t2"><br> 
+    <lable>Enter the Number of Years</lable>
+    <input type="number" id="t3"><br>
+    <button onclick="disp()">Calculate</button>
+
+</body>
+</html>

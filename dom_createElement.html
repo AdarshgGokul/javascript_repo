@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="dynamic()">Click</button>
+    <div id="main"></div>
+    <script>
+        function dynamic() 
+        {
+                var newDiv = document.createElement("div");
+                var text1 = document.createTextNode("Welcome....");
+
+                newDiv.appendChild(text1);
+
+                var curDiv = document.getElementById("main");
+   
+
+                var htag = document.createElement("h1");
+                var text2 = document.createTextNode("JavaScript");
+                htag.appendChild(text2); 
+                newDiv.appendChild(htag); 
+                curDiv.appendChild(newDiv);
+                var newDiv2 = document.createElement("div");
+                var imgtag = document.createElement ("img");
+                newDiv2.appendChild(imgtag); 
+                curDiv.append(newDiv2);
+                document.body.appendChild(curDiv);
+        }
+
+    </script>
+
+
+
+</body>
+</html>
