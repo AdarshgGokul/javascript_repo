@@ -1,0 +1,10 @@
+const person = {
+    firstName:"Adarsh",
+    lastName: "Gokul",
+    fullName: function () 
+    {
+      return this.firstName + " " + this.lastName;
+    }
+  }
+  
+  person.fullName();  

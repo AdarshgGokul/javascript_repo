@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" onkeydown="aleart ( 'you have pressed a key down')">
+    <h1 onmouseover="textChange()" id="h" onmouseout="textchng()">KGM</h1>
+    <script>
+        function textChange()
+        {
+            document.getElementById("h").style.backgroundColor="aqua";
+            document.getElementById("h").style.fontSize="60px";
+            document.getElementById("h").style.color="white";
+            document.getElementById("h").textContent="WEB DEVELOPER";
+
+
+        }
+        function textchng()
+        {
+            document.getElementById("h").style.backgroundColor="red";
+            document.getElementById("h").style.fontSize="60px";
+            document.getElementById("h").style.color="white";
+            document.getElementById("h").textContent="WEB DEVELOPER";
+
+
+        }
+        
+        
+
+    </script>
+    
+</body>
+</html>
