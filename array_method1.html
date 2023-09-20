@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        var product_det = ["A2023","Washing machine","24500.90","samsung"];
+        product_det.push("discount 8%","New Delhi","India");
+        document.write(product_det+"<br>");
+
+        product_det.unshift("Qr code:567",true)
+        document.write(product_det+"<br>");
+
+
+        //pop()
+
+        var removed = product_det.pop();
+        document.write(removed+"<br>");
+        document.write(product_det+"<br>");
+
+        //shift
+
+        product_det.shift()
+        document.write(product_det+"<br>");
+
+        //
+
+        document.write("remove element:"+"<br>")
+        document.write(fruit.splice(1,1)+"<br>");
+
+        document.write("After removing Array element:"+"<br>");
+        document.write(fruit.splice(1,1)+"<br>");
+
+        document.write("add element:"+"<br>")
+        fruit.splice(1,0,"mangos","straw","pappaya")
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
