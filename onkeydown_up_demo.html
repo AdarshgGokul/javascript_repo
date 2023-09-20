@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" onkeydown="aleart ( 'you have pressed a key down')">
+    <input type="text" onkeyup="passwordCheck()" id="h1">
+    <span id="s1"> </span>
+    <script>
+        var t1,s1;
+        function passwordCheck(){
+            t1= document.getElementById("t1").value;
+            s1= document.getElementById("s1")
+            if(t1.length>5)
+            {
+                s1.innerText="Strength";
+            
+            }
+            else{
+                s1.innerText="week";
+            }
+        }
+    </script>
+
+</body>
+</html>

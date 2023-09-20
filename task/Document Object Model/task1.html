@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+ <html><head>
+<meta charset=utf-8 />
+<title>JS DOM paragraph style</title>
+<script type="text/JavaScript">
+    function js_style() {
+        document.getElementById("text").style.color="blue";
+        document.getElementById("text").style.fontStyle="italic";
+        document.getElementById("text").style.fontWeight="bold";
+        document.getElementById("text").style.fontSize="30px";
+
+    }
+</script>
+ </head>
+ <body>
+ <p id ='text'>jsdom is a pure-JavaScript implementation of many web standards, notably the WHATWG DOM and HTML Standards, for use with Node.js. 
+    In general, the goal of the project is to emulate enough of a subset of a web browser to be useful for testing and scraping real-world web 
+    applications.</p>
+ <div>
+<button id="jsstyle" onclick="js_style()">Style</button>
+ </div>
+</body>
+ </html>
