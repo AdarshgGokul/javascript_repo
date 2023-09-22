@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event</title>
+    </head>
+    <body>
+        <label>Click  inputs</label>
+        <button type="text" onclick="fun()">Click</button>
+        <script>
+            var input1=prompt("Enter the value one:");
+            var input2=prompt("Enter the value two:");
+            
+            function fun(){
+                if((input1==" "||input2==0)||(input1==" "||input2==0)){
+                    alert(" One of your data is empty,kindly fill it and try again  ");
+                }
+                else if((input1==input2)){
+                    alert(input1+" equal to "+ input2);
+                }
+                else{
+                    alert(input1+" not equal to "+ input2);
+                }
+            }
+        </script>
+    </body>
+</html>
