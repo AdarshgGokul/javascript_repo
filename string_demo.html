@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str="hello world";
+        var str2= '"congratulation!" you won $100';
+        document.write(str+"<br> "+str2);
+
+        // [/n] is used to +print the line in newline
+
+        //IndexOf
+        var para= "Yesterday is a History Tommorow is a Mistery and today is a gift so is called present. "
+        console.log(para.indexOf("is"));
+        //print- 10
+
+        //IndexOf
+        var para= "Yesterday is a History Tommorow is a Mistery and today is a gift so is called present. "
+        console.log(para.indexOf("is",15));
+        //print- 16
+
+        //lastIndexOf
+        var para= "Yesterday is a History Tommorow is a Mistery and today is a gift so is called present. "
+        console.log(para.lastIndexOf("is"));
+        //print- 68
+
+        // Search ()
+        var para= "Yesterday is a History Tommorow is a Mistery and today is a gift so is called present. "
+        console.log(para.search(/is/i));
+        // print- 10
+
+        // Slice ()
+        var para= "Yesterday is a History Tommorow is a Mistery and today is a gift so is called present. "
+        console.log(para.slice(-6,-2));
+        // print- sent
+
+           // Slice ()
+           var para= "Yesterday is a History Tommorow is a Mistery and today is a gift so is called present. "
+        console.log(para.slice(-6));
+         // print- sent.
+
+         // SubString () [negative number wont work in substring]
+         var para= "Yesterday is a History Tommorow is a Mistery and today is a gift so is called present. "
+        console.log(para.substring(10,27));
+         // print- is a History To
+
+         
+         // SubString () [auto swaping]
+         var para= "Yesterday is a History Tommorow is a Mistery and today is a gift so is called present. "
+        console.log(para.substring(8,2));
+        //print- sterda
+
+        //replace()
+        var bro= "make hey while sun shine hey";
+        console.log(bro.replace("hey","hay"));
+        //print- make hay while sun shine hey
+
+        //replac()
+        var bro= "make hey while sun shine hey";
+        console.log(bro.replace("/Hey/i","hay"));
+        //print- make hey while sun shine hey
+
+          //replac()
+          var bro= "make hey while sun shine hey";
+        console.log(bro.replace("/Hey/ig","hay"));
+        //print- make hey while sun shine hey
+
+        //replacALL()
+        var bro= "make hey while sun shine hey";
+        console.log(bro.replaceAll("hey","hay"));
+        //print- make hay while sun shine hay
+
+        //toUpperCase()
+        var para= "Yesterday is a History Tommorow is a Mistery and today is a gift so is called present. "
+        console.log(para.toUpperCase());
+        //print- YESTERDAY IS A HISTORY TOMMOROW IS A MISTERY AND TODAY IS A GIFT SO IS CALLED PRESENT. 
+
+        //toLowerCase()
+        var para= "Yesterday is a History Tommorow is a Mistery and today is a gift so is called present. "
+        console.log(para.toLowerCase());
+        //print- yesterday is a history tommorow is a mistery and today is a gift so is called present. 
+
+        //concading two or more String
+        let t1="Vandhe";
+        let t2="Bharath";
+        let t3= "Fatest train";
+
+        let com= t1 + t2 + t3;
+        console.log(com);
+
+        //concading two or more String [Shortcut]
+        let w="happy";
+            w+= "Birthday";
+            console.log(w);
+
+        // Individual character from string:
+        let h = "happy Birthday";
+        console.log(h.charAt(6));
+        //print- 6
+        
+        // Using[]
+        var str="Hello World!";
+        document.write(str[0]); //print: H
+        document.write(str[6]); //print: W
+        document.write(str[str.length-1]); //print: !
+        document.write(str[30]); //print: undefined
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
