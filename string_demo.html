@@ -107,6 +107,33 @@
         document.write(str[str.length-1]); //print: !
         document.write(str[30]); //print: undefined
 
+        //Split()
+         var fruitStr="apple, Banana, Mango, Orange, Papaya";
+         var fruitArr= fruitStr.split(",");
+        
+         for (let a of fruitArr)
+         {
+            console.log(a);
+         }
+         /*print- apple
+              Banana
+              Mango  
+              Orange
+              Papaya*/
+
+         var country="Singapore";
+         var cArr= country.split(",");
+        
+         for (let a1 of cArr)
+         {
+            console.log(a1);
+         }
+         //print- Singapore
+
+        //  document.write(fruitArr[0]);
+        //  document.write(fruitArr[2]);
+        //  document.write(fruitArr[fruitArr.length-1]);
+
 
 
 

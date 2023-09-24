@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="input">Enter your Country:</label>
+    <input type="text" id="con" placeholder="Enter country">
+
+    <button onclick="val()">add</button><br>
+    <select id="sel">
+        <option value="" id="create">Select The Country</option>
+
+    </select>
+    <button onclick="getopt()">Check option</button>
+    <p>The country you choose is : <span id="output"></span></p>
+
+    <script>
+        function val() {
+            var user_input = document.getElementById("con").value;
+            var opt = document.createElement("option");
+            opt.setAttribute("value", user_input);
+            opt.textContent = user_input;
+            document.getElementById("sel").appendChild(opt);
+
+        }
+        function getopt() {
+            selectElement = document.getElementById("sel").value;
+            // output = selectElement.value;
+            document.getElementById('output').textContent = selectElement;
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
