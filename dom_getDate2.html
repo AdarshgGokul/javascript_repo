@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function CreateDate()
+        {
+            var d= Date(document.getElementById("dob") .value);
+            document. getElementById("d1").values=(d.getDate(d.setDate (d.getDate()%+5))) + "-" + (d.getMonth ()+1) + "-" + (d.getFullYear());
+            document.getElementById("d2").value=(d.getDate(d. setDate (d.getDate ()-10))) + "." + (d.getMonth ()+1) +"-" + (d.getFullYear());
+}
+    </script>
+    <input types="date" id="dob" placeholders="Enter your Date">
+<input types="text" id="di" placeholders="Date after 5"><br><br>
+<input types="text" id="d2" placeholder="Date before 5">
+
+</head>
+<body>
+    
+</body>
+</html>

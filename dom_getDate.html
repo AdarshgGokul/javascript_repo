@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*let d=new Date()
+        console.log(d.getFullYear());
+        console.log(d.getMonth());
+        console.log(d.getDay());
+        console.log(d.getDate());*/
+
+        function getMethods(){
+            var d = new Date(document.getElementById("t1").value);
+            document.write("year:   "+d.getFullYear()+"<br>");
+            document.write("Month:   "+d.getMonth()+"<br>");
+            document.write("Day:   "+d.getDay()+"<br>");
+            document.write("Date:   "+d.getDate()+"<br>");
+
+        }
+//         Getting the Hours, Minutes, Seconds, and Milliseconds Similarly, the Date object provides methods
+// like getHours, getMinutes, getSeconds, getTimezoneOffsetO etc. to extract the time components from the Date object.
+ var d9 = new Date;
+// Extracting time part
+document.write(d.getHours0 + "<br>"); // Display the number of hours into the day (0-23)
+document.write(d.getMinutesO + "<br>"); // Display the number of minutes into the hour (0-59)
+document.write(d.getSeconds0 + "<br>"); // Display the seconds into the minute (0-59)
+document.write(d.getMillisecondsO + "<br>"); // Display the number of milliseconds into second (0-999)
+document. write(d.getTime0 + "<br>"); // Display the number of milliseconds since 1/1/1970
+document.write(d.getTimezoneOffsetO); 
+//Display the time-zone offset (fromGreenwich Mean Time) in minutes
+
+    </script>
+</head>
+<body>
+    <input type="date" id="t1">
+    <button onclick="getMethods()">Click</button>
+
+    
+</body>
+</html>
