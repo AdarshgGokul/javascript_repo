@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Particular Month</h1></p>
+    <button onclick="date()">Get month</button>
+    <script> 
+    function date(){
+
+    var month_name = function(dt){
+        mlist = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+        return mlist[dt.getMonth()];
+        }
+
+        document.write(month_name(new Date("15/04/2001")));
+        document.write(month_name(new Date("02/08/2004")));
+    }
+    </script>
+    
+</body>
+</html>

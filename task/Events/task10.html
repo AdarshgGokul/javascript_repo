@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function creation(){
+            var a = document.getElementById("data1").value
+            var b =document.getElementById("data2");
+            var date = new Date(b.value)
+           var month=date.getMonth()+1
+            console.log(abd);
+            var password1 =a.slice(0,4);
+
+            var abd =password1+date.getDate()+month+date.getFullYear();
+            document.getElementById("data3").innerHTML+= "Password:"+ abd +"<br>";
+            // document.getElementById("data3").innerHTML+= "Password:"+ <input type=password value= ${abd}>;
+
+        }
+    </script>
+</head>
+<body>
+    <label for="">UserName:</label>
+    <input type="text" name="" id="data1"><br><br>
+    <label for="">DOB:</label>
+    <input type="date" name="" id="data2">
+    <button onclick="creation();">Click</button><br><br>
+    <div id="data3"></div>
+   
+</body>
+</html>
