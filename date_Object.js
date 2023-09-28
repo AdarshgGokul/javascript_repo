@@ -66,6 +66,6 @@ console.log(d1.toTimeString());
 //Output : 2 17:47:38 GMT+0530 (India Standard Time)
 
 
-let d7= new Date();
+let d7  = new Date();
 console.log(d1.toLocaleTimeString());
 //Output : 2 5:48:30 PM

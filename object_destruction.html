@@ -12,11 +12,19 @@
             FirstName:"Adarsh",
             LastName: "Gokul",
             age :23,
-            city:"chennai",
-            "mobile Number":7845481191,
             "1": "Rank1"
 
         }
+        let contact={
+            City:"chennai",
+            pin:641002
+            
+        }
+        // Adding two object using spread operator(...)
+        let details={
+            ...person,...contact
+        }
+        console.log(details)
         //Object destruction
 
         /*let {FirstName,age,email}= person;
@@ -37,6 +45,8 @@
         person.gender="Male";
         person["email"]="adarhgokul15@gmail.com";
         console.log(person);
+
+
 
 
 
