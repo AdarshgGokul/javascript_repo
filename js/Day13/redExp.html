@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type= "text" id ="mob">
+    <button>Submit</button>
+    <script>
+        let btnE1= document.querySelector("button");
+
+        let inputE1=parseInt(prompt("Enter your number"))
+        let patten=/^[6-9][\d]{9}$/g;
+        if( patten.test(inputE1)==true){
+            alert("correct");
+        }else{
+            alert("incorrect")
+        }
+    </script>
+</body>
+</html>
