@@ -1,33 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="device-width initial-scale=1.0">
+    <title>Listing Previous numbers</title>
 </head>
-<body>
-    <label for="integerInput">Enter an Integer:</label>
-    <input onkeydown="int()" type="text" id="input" placeholder="Enter an integer">
 
-    <br>
-    <select id="sel">
-        <option value="">Select an integer</option>
+<body>
+    <h1 style="text-align: center;">Listing previous Interger</h1>
+    <label>Value</label>
+    <input type="number" id="num">
+    <input type="button" onclick="genNum()" value="submit">
+    <label>Options</label>
+    <select id="select1">
+        <option>Select an integer</option>
     </select>
-    
     <script>
-        function int() 
-        {
-            var user_input = parseInt(document.getElementById("input").value);
-            if (Number.isInteger(user_input)) 
-            {
-                var select_tag = document.getElementById("sel");
-                var opt_tag = document.createElement('option');
-                opt_tag.setAttribute("value", user_input);
-                opt_tag.textContent = user_input;
-                select_tag.appendChild(opt_tag);
+        function genNum() {
+            var a = document.getElementById('num').value;
+            for (var i = 1; i <= a; i++) {
+                var opt = document.createElement("option");
+                opt.textContent = i;
+                opt.value = i;
+                document.getElementById("select1").appendChild(opt);
             }
-            
+            select1.innerHTML = b;
         }
+        document.querySelector('#num').addEventListener("keyup", function (i) {
+            console.log(i);
+            if (i.key == "Enter") {
+                genNum();
+            }
+        });
+
     </script>
 </body>
+
 </html>
