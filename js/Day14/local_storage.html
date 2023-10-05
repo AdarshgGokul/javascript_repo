@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <button>remove</button>
+    <button>clear</button>
+    <script>
+
+        // setItem("key",Value), getItem("key"), removeItem('key'), clear()
+
+        let name2= prompt("Enter the name")
+        localStorage.setItem('name','Adarsh')
+        localStorage.setItem('age',23)
+        localStorage.setItem('course','fs')
+        localStorage.setItem('city','cbe')
+        localStorage.setItem('state','tn')
+        
+        let btn1= document.querySelector('button')
+        btn1.onclick = function(){
+            localStorage.removeItem('name')
+            localStorage.removeItem('age')
+        }
+         let btn2= document.getElementById('clear')
+         btn2.addEventListener('click',()=>{
+            localStorage.clear()
+         })
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
