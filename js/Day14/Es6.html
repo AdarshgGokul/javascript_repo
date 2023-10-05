@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //var
+        var no
+
+
+        //spread 
+
+         let color =["red","green","Yellow"]
+         let color2 = ["black",...color,"blue",...color]
+         console.log(color2)
+
+         //
+
+         let address ={
+            city:"srp",
+            district:"coimbatore",
+            state:"tn"
+         }
+
+         let person ={
+            Nmae: "Adarsh",
+            age: 23,
+            ...address
+         }
+         console.log(person)
+
+
+         //Rest
+
+        let num=[1,2,3,4,5]
+        function sum(a,b,c,d,e){
+            console.log(a+b+c+d+e)
+        }
+        sum(...num); // 15
+
+
+
+        //find, findindex, filter
+
+        let colors=["red","green","yellow","blue"]
+        let num1=[1,2,3,4,5]
+        let res = num1.filter((e)=>{
+            return e < 5;
+        });
+
+        let res1 = num1.reduce((e)=>{
+            return e >= 10 ;
+        })
+
+        //console'log(res)
+
+        //map()
+
+        let result = num1.map(e=>{
+            return e *20
+        })
+        console.log(result);
+        console.log(num1);
+
+        //Destructuring
+
+        let user={
+            Name:"Adarsh",
+            course:"full stack",
+            district:"coimbatore",
+            state:"TN"
+
+        }
+        let user1={
+            Name:"Nova",
+            course:"full stack",
+            district:"coimbatore",
+            state:"TN"
+        }
+        let{ Name,course,district,state} = user
+        console.log(Name,course,district,state); // Adarsh full stack coimbatore TN
+
+
+        //
+
+        let fruit=['apple','banana','mango','orange']
+        let[no,no2,no3,no4]= fruit
+        console.log(no4) //orange
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
